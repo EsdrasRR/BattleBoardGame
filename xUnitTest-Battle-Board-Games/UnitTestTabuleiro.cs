@@ -51,6 +51,7 @@ namespace xUnitTest_Battle_Board_Games
                         break;
 
                 }
+                tabuleiro.ElementosDoExercito.Add(elementoDoExercito1);
             }
 
             Assert.True(tabuleiro.ElementosDoExercito.Count == 16);
