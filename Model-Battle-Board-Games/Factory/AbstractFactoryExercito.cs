@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BattleBoardGame.Model.Factory
+﻿namespace BattleBoardGame.Model.Factory
 {
     public abstract class AbstractFactoryExercito
     {
@@ -28,15 +22,15 @@ namespace BattleBoardGame.Model.Factory
             AbstractFactoryExercito factory = null;
             if (nacionalidade == Nacao.Persia)
             {
-                factory = null;
+                factory = new FactoryExercitoPersa();
             }
             else if (Nacao.Egito == nacionalidade)
             {
-                factory = new Factory.FactoryExercitoPersa();
+                factory = new FactoryExercitoEgipicio();
             }
             else if (Nacao.India == nacionalidade)
             {
-                factory = new Factory.FactoryExercitoIndiano();
+                factory = new FactoryExercitoIndiano();
             }
             return factory;
         }

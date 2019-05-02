@@ -35,9 +35,9 @@ namespace BattleBoardGame
 
             services.AddEntityFrameworkSqlServer().AddDbContext<Model.DAL.ModelJogosDeGuerra>();
 
-            services.AddDefaultIdentity<IdentityUser>()
-                .AddDefaultUI(framework: UIFramework.Bootstrap4)
-                .AddEntityFrameworkStores<Model.DAL.ModelJogosDeGuerra>();
+            //services.AddDefaultIdentity<IdentityUser>()
+            //    .AddDefaultUI(framework: UIFramework.Bootstrap4)
+            //    .AddEntityFrameworkStores<Model.DAL.ModelJogosDeGuerra>();
 
             services.Configure<IdentityOptions>(
             options =>

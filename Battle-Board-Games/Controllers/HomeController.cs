@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using BattleBoardGame.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace BattleBoardGame.Controllers
 {
@@ -34,6 +35,7 @@ namespace BattleBoardGame.Controllers
        
 
         private readonly Model.DAL.ModelJogosDeGuerra _context;
+
         public HomeController(Model.DAL.ModelJogosDeGuerra context)
         {
             this._context = context;
@@ -46,6 +48,7 @@ namespace BattleBoardGame.Controllers
         }
 
 
+        [AllowAnonymous]
         public ActionResult Index()
         {
             ViewBag.Title = "Home Page";
