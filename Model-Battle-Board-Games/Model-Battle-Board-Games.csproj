@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>ModelBattleBoardGames</RootNamespace>
+    <AssemblyName>ModelBattleBoard-Games</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>

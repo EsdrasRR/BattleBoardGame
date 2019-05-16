@@ -20,7 +20,7 @@ namespace BattleBoardGame.Controllers
 
             return View();
         }
-
+        [Authorize]
         public IActionResult Contact()
         {
             ViewData["Message"] = "Contatos do Professor.";
